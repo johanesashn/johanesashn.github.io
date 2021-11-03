@@ -1,0 +1,52 @@
+body {
+    min-height: 2000px;
+}
+
+.jumbotron img {
+    width: 300px;
+    border: 3px solid #888;
+}
+
+.jumbotron {
+    background-color: #333;
+    padding-top: 3rem;
+    color: aliceblue;
+}
+
+.about {
+    background-color: #aaa;
+}
+
+hr {
+    width: 300px;
+    border-top: 3px solid black;
+    margin: 1rem auto;
+}
+
+.projects {
+    background-color: #888;
+}
+
+.contact {
+    background-color: #444;
+    color: white;
+}
+
+.contact hr {
+    width: 300px;
+    border-top: 3px solid white;
+    margin: 1rem auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 5rem;
+}
