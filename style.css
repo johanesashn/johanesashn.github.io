@@ -629,17 +629,10 @@ span {
   padding-top: 3em;
 }
 
-.skills .fill {
-  margin: auto;
-  width: 85%;
-}
+/*
 
 .skills .cards img {
   width: 15vmin;
-}
-
-.skills .header .upside button {
-  color: #c9165a;
 }
 
 .skills .fill .cards {
@@ -703,28 +696,7 @@ span {
   padding: 1.8em 0;
 }
 
-.skills .fill .cards .card.active:hover .header {
-  transform: scale(1);
-}
 
-.skills .fill .cards .card:hover .header{
-  background-color: #c7014d;
-  color: white;
-  transform: scale(1.1);
-}
-
-.skills .fill .cards .card:nth-child(5):hover .header, 
-.skills .fill .cards .card:nth-child(6):hover .header {
-  background-color: #ec9a01;
-  color: white;
-}
-
-.skills .fill .cards .card:nth-child(7):hover .header,
-.skills .fill .cards .card:nth-child(8):hover .header,
-.skills .fill .cards .card:nth-child(9):hover .header {
-  background-color: #125B50;
-  color: white;
-}
 
 .skills .fill .cards .card.active .fill{
   transform: scaleX(1);
@@ -798,16 +770,12 @@ span {
   animation: riseImg .5s .5s forwards;
 }
 
-.skills .fill .cards .card h2 {
-  font-size: 3vmin;
-  font-weight: bolder;
-  font-family: "Lato", sans-serif;
-  transform: rotate(-90deg);
-  margin-top: -.37em;
-}
 
-.skills .fill .cards .card h2.small {
-  display: none;
+} */
+
+.skills .fill {
+  margin: auto;
+  width: 85%;
 }
 
 .skills button {
@@ -821,6 +789,10 @@ span {
   color: #1d1d1d;
 }
 
+.skills .header .upside button {
+  color: #c9165a;
+}
+
 .skills .white button {
   color: white;
 }
@@ -832,6 +804,44 @@ span {
 .skills span {
   font-size: 3.5vmin;
   color: #505050;
+}
+
+.skills .cards {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+  "one two three";
+  gap: .5em;
+}
+
+.skills .card {
+  text-align: center;
+  border: 1px solid black;
+  font-family: "Lato", sans-serif;
+  padding: .2em;
+}
+
+.skills .fill .cards .card.active:hover .header {
+  transform: scale(1);
+}
+
+.skills .fill .cards .card:hover .header{
+  background-color: #c7014d;
+  color: white;
+  transform: scale(1.1);
+}
+
+.skills .fill .cards .card:nth-child(5):hover .header, 
+.skills .fill .cards .card:nth-child(6):hover .header {
+  background-color: #ec9a01;
+  color: white;
+}wh
+
+.skills .fill .cards .card:nth-child(7):hover .header,
+.skills .fill .cards .card:nth-child(8):hover .header,
+.skills .fill .cards .card:nth-child(9):hover .header {
+  background-color: #125B50;
+  color: white;
 }
 
 footer {
