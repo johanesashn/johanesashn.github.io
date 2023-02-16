@@ -634,83 +634,100 @@ span {
   width: 85%;
 }
 
-.skills .cards img {
-  width: 15vmin;
-}
-
 .skills .header .upside button {
   color: #c9165a;
 }
 
-.skills .fill .cards {
-  margin: -1em auto;
+.skills button {
+  background-color: transparent;
+  border: none;
+  font-size: 10vmin;
+  font-weight: bolder;
+  transition: all 0.3s;
+  margin-bottom: -1em;
+  cursor: text;
+  color: #1d1d1d;
+}
+
+.skills button:hover {
+  animation: 0.8s bounceText;
+}
+
+.skills h2.small {
+  display: none;
+}
+
+.skills .cards {
   display: flex;
   width: 90%;
-  align-items: center;
-  margin-top: 0em;
+  margin: 1em auto;
 }
 
-.skills .fill .cards .card {  
+.skills .card {
   display: flex;
-  margin-bottom: 2em;   
-  margin-right: .5em;
-}
-
-.skills .fill .cards .card .header {
-  display: flex;
-  padding: 1em;
-  height: 100%;
-  flex-direction: column;
+  margin: 0 .3em;
+  width: max-content;
+  border: 1px solid black;
   background-color: white;
-  border: 2px solid #c7014d;
-  box-shadow: 1px 0 2px #8e8d8d;
-  color: #c7014d;
-  transition: all .3s;
 }
 
-.skills .fill .cards .card.active .header:hover {
-  transform: scale(1);
+.skills .fill .cards .card {
+  border: 2px solid #c7014d;
+}
+
+.skills .fill .cards .card:nth-child(5), 
+.skills .fill .cards .card:nth-child(6) {
+  border: 2px solid #ec9a01;
+}
+
+.skills .fill .cards .card:nth-child(7),
+.skills .fill .cards .card:nth-child(8),
+.skills .fill .cards .card:nth-child(9) {
+  border: 2px solid #125B50;
+}
+
+.skills .cards .card .header{
+  padding: 1em;
+  border-right: 2px solid #c7014d;
+  transition: all .3s;
+  color: #c7014d;
+  font-family: "Roboto", sans-serif;
 }
 
 .skills .fill .cards .card:nth-child(5) .header,
 .skills .fill .cards .card:nth-child(6) .header {
-  border: 2px solid #ec9a01;
+  border-right: 2px solid #ec9a01;
   color: #ec9a01;
 }
 
 .skills .fill .cards .card:nth-child(7) .header,
 .skills .fill .cards .card:nth-child(8) .header,
 .skills .fill .cards .card:nth-child(9) .header {
-  border: 2px solid #125B50;
+  border-right: 2px solid #125B50;
   color: #125B50;
 }
 
-.skills .fill .cards .card .fill{
-  transform: scaleX(0);
-  width: 0%;
-  transition: all .6s ease-in-out;
-  font-size: 0;
-  height: fit-content;
-  padding-top: 1em;
-  padding-bottom: 1.35em;
-  box-sizing: border-box;
-  color: transparent;
-  box-shadow: 1px 0 3px #8e8d8d;
-  background-color: white;
-}
-
-.skills .fill .cards .card:nth-child(5) .fill {
-  padding: 1.8em 0;
-}
-
-.skills .fill .cards .card.active:hover .header {
-  transform: scale(1);
-}
-
-.skills .fill .cards .card:hover .header{
-  background-color: #c7014d;
+.skills .fill .cards .card.active .header {
   color: white;
-  transform: scale(1.1);
+  background-color: #c7014d;
+}
+
+.skills .fill .cards .card:nth-child(5).active .header, 
+.skills .fill .cards .card:nth-child(6).active .header {
+  background-color: #ec9a01;
+  color: white;
+}
+
+.skills .fill .cards .card:nth-child(7).active .header,
+.skills .fill .cards .card:nth-child(8).active .header,
+.skills .fill .cards .card:nth-child(9).active .header {
+  background-color: #125B50;
+  color: white;
+}
+
+.skills .fill .cards .card:hover .header {
+  color: white;
+  background-color: #c7014d;
 }
 
 .skills .fill .cards .card:nth-child(5):hover .header, 
@@ -726,107 +743,42 @@ span {
   color: white;
 }
 
-.skills .fill .cards .card.active .fill{
-  transform: scaleX(1);
+
+.skills .cards .card .header h2 {
+  transform: rotate(-90deg);
+  margin-top: -.4em;
+}
+
+.skills .cards .card.active .fill{
   width: 100%;
-  font-size: inherit;
-  text-align: center;
   font-size: 2.2vmin;
-  border: 1.5px solid grey;
+  animation: font-rise .3s .5s forwards;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border: 2px solid #c7014d;
-  border-left: none;
-  letter-spacing: .05em;
 }
 
-.skills .fill .cards .card.active:nth-child(5) .fill,
-.skills .fill .cards .card.active:nth-child(6) .fill{
-  border: 2px solid #ec9a01;
-  border-left: none;
-}
-
-.skills .fill .cards .card.active:nth-child(7) .fill,
-.skills .fill .cards .card.active:nth-child(8) .fill,
-.skills .fill .cards .card.active:nth-child(9) .fill{
-  border: 2px solid #143F6B;
-  border-left: none;
-}
-
-.skills .fill .cards .card.active:nth-child(2) .fill, 
-.skills .fill .cards .card.active:nth-child(6) .fill {
-  padding: 1.07em 0;
+.skills .cards .card .fill {
+  width: 0%;
+  transition: all .5s;
+  font-size: 0;
+  padding: 1em;
+  color: transparent;
+  text-align: center;
 }
 
 .skills .fill .cards .card.active .fill p {
-  animation: riseFontRed .5s .7s forwards;
+  animation: riseFontRed .5s .4s forwards;
   width: 98%;
 }
 
 .skills .fill .cards .card.active:nth-child(5) .fill p,
 .skills .fill .cards .card.active:nth-child(6) .fill p {
-  animation: riseFontYellow .5s .7s forwards;
+  animation: riseFontYellow .5s .4s forwards;
 }
 
 .skills .fill .cards .card.active:nth-child(7) .fill p,
 .skills .fill .cards .card.active:nth-child(8) .fill p,
 .skills .fill .cards .card.active:nth-child(9) .fill p {
-  animation: riseFontGreen .5s .7s forwards;
-}
-
-.skills .fill .cards .card.active .header {
-  background-color: #c7014d;
-  color: white;
-}
-
-.skills .fill .cards .card.active:nth-child(5) .header,
-.skills .fill .cards .card.active:nth-child(6) .header{
-  background-color: #ec9a01;
-  color: white;
-}
-
-.skills .fill .cards .card.active:nth-child(7) .header,
-.skills .fill .cards .card.active:nth-child(8) .header,
-.skills .fill .cards .card.active:nth-child(9) .header{
-  background-color: #125B50;
-  color: white;
-}
-
-
-.skills .fill .cards .card.active .fill img{
-  display: block;
-  margin-bottom: 1em;
-  animation: riseImg .5s .5s forwards;
-}
-
-.skills .fill .cards .card h2 {
-  font-size: 3vmin;
-  font-weight: bolder;
-  font-family: "Lato", sans-serif;
-  transform: rotate(-90deg);
-  margin-top: -.37em;
-}
-
-.skills .fill .cards .card h2.small {
-  display: none;
-}
-
-.skills button {
-  background-color: transparent;
-  border: none;
-  font-size: 10vmin;
-  font-weight: bolder;
-  transition: all 0.3s;
-  margin-bottom: -1em;
-  cursor: text;
-  color: #1d1d1d;
-}
-
-.skills .white button {
-  color: white;
-}
-
-.skills button:hover {
-  animation: 0.8s bounceText;
+  animation: riseFontGreen .5s .4s forwards;
 }
 
 .skills span {
@@ -982,6 +934,15 @@ footer img {
   width: calc(1vw + 0.7em);
   margin-right: 1em;
   transition: all 0.3s;
+}
+
+@keyframes font-rise {
+  from{
+    color: transparent;
+  }
+  to {
+    color: inherit;
+  }
 }
 
 @keyframes move-rtl {

@@ -5,6 +5,10 @@
 }
 
 @media (max-width: 600px) {
+  body {
+    height: fit-content;
+  }
+  
   .projects .container a {
     width: 50%;
   }
