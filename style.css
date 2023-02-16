@@ -296,7 +296,8 @@ span {
 #more5,
 #more6, 
 #more7,
-#more8 {
+#more8, 
+#more9 {
   display: none;
 }
 
@@ -349,7 +350,8 @@ span {
 #more5:target,
 #more6:target,
 #more7:target,
-#more8:target {
+#more8:target,
+#more9:target {
   display: block;
   top: 0;
   background-color: rgb(0, 0, 0, 0.9);
