@@ -131,7 +131,7 @@ nav .right span {
 
 @media (max-width : 700px){
     body {
-        overlay : auto;
+        overlay : scroll;
     }
     .projects-container{
         width: 100vw;
