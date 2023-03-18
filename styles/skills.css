@@ -108,7 +108,6 @@
 @media (max-width: 700px) {
   .skills {
     background-image: url("../img/smallJumbo.png");
-    background-attachment: inherit;
   }
 
   .skills .fill .cards .card.active .fill p {

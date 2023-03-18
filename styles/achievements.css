@@ -1,8 +1,4 @@
  @media (max-width: 1000px){
-    .achievements {
-        background-attachment: inherit;
-    }
-
     .achievements .fill{
         width: 90%;
     }
