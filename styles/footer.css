@@ -1,7 +1,6 @@
 @media (max-width: 1000px) {
   footer {
     background-size: cover;
-    background-attachment: inherit;
   }
   
   footer .container {
