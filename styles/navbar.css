@@ -158,7 +158,8 @@ nav .right span {
   display: inline-block;
   height: 1vmin;
   width: 5vmin;
-  background-color: #0d0d0d;
+  /* background-color: #0d0d0d; */
+  background-color: #f41f68;
   transition: all 0.5s ease-in-out;
 }
 
@@ -176,7 +177,7 @@ nav .right span:last-child {
 
 nav .right:hover span {
   width: 7vmin;
-  background-color: #f41f68;
+  /* background-color: #f41f68; */
 }
 
 nav .right:hover span:first-child {
