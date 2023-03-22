@@ -191,10 +191,6 @@ nav .right span.slide {
   background-color: #f41f68;
 }
 
-nav .right:hover span.slide {
-  background-color: aqua;
-}
-
 /* tag */
 img.tag {
   position: fixed;
