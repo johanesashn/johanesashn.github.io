@@ -21,4 +21,8 @@
   .display .more a:nth-child(1) {
     margin-top: -2em;
   }
+
+  .view-website {
+    padding: .8 em;
+  }
 }
