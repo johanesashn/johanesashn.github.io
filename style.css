@@ -694,14 +694,14 @@ span {
   border: 2px solid #c7014d;
 }
 
-.skills .fill .cards .card:nth-child(5), 
-.skills .fill .cards .card:nth-child(6) {
+.skills .fill .cards .card:nth-child(6), 
+.skills .fill .cards .card:nth-child(7) {
   border: 2px solid #ec9a01;
 }
 
-.skills .fill .cards .card:nth-child(7),
 .skills .fill .cards .card:nth-child(8),
-.skills .fill .cards .card:nth-child(9) {
+.skills .fill .cards .card:nth-child(9),
+.skills .fill .cards .card:nth-child(10) {
   border: 2px solid #125B50;
 }
 
@@ -713,15 +713,15 @@ span {
   font-family: "Roboto", sans-serif;
 }
 
-.skills .fill .cards .card:nth-child(5) .header,
-.skills .fill .cards .card:nth-child(6) .header {
+.skills .fill .cards .card:nth-child(6) .header,
+.skills .fill .cards .card:nth-child(7) .header {
   border-right: 2px solid #ec9a01;
   color: #ec9a01;
 }
 
-.skills .fill .cards .card:nth-child(7) .header,
 .skills .fill .cards .card:nth-child(8) .header,
-.skills .fill .cards .card:nth-child(9) .header {
+.skills .fill .cards .card:nth-child(9) .header,
+.skills .fill .cards .card:nth-child(10) .header {
   border-right: 2px solid #125B50;
   color: #125B50;
 }
@@ -731,15 +731,15 @@ span {
   background-color: #c7014d;
 }
 
-.skills .fill .cards .card:nth-child(5).active .header, 
-.skills .fill .cards .card:nth-child(6).active .header {
+.skills .fill .cards .card:nth-child(6).active .header, 
+.skills .fill .cards .card:nth-child(7).active .header {
   background-color: #ec9a01;
   color: white;
 }
 
-.skills .fill .cards .card:nth-child(7).active .header,
 .skills .fill .cards .card:nth-child(8).active .header,
-.skills .fill .cards .card:nth-child(9).active .header {
+.skills .fill .cards .card:nth-child(9).active .header,
+.skills .fill .cards .card:nth-child(10).active .header {
   background-color: #125B50;
   color: white;
 }
@@ -749,15 +749,15 @@ span {
   background-color: #c7014d;
 }
 
-.skills .fill .cards .card:nth-child(5):hover .header, 
-.skills .fill .cards .card:nth-child(6):hover .header {
+.skills .fill .cards .card:nth-child(6):hover .header, 
+.skills .fill .cards .card:nth-child(7):hover .header {
   background-color: #ec9a01;
   color: white;
 }
 
-.skills .fill .cards .card:nth-child(7):hover .header,
 .skills .fill .cards .card:nth-child(8):hover .header,
-.skills .fill .cards .card:nth-child(9):hover .header {
+.skills .fill .cards .card:nth-child(9):hover .header,
+.skills .fill .cards .card:nth-child(10):hover .header {
   background-color: #125B50;
   color: white;
 }
@@ -789,14 +789,14 @@ span {
   width: 98%;
 }
 
-.skills .fill .cards .card.active:nth-child(5) .fill p,
-.skills .fill .cards .card.active:nth-child(6) .fill p {
+.skills .fill .cards .card.active:nth-child(6) .fill p,
+.skills .fill .cards .card.active:nth-child(7) .fill p {
   animation: riseFontYellow .5s .4s forwards;
 }
 
-.skills .fill .cards .card.active:nth-child(7) .fill p,
 .skills .fill .cards .card.active:nth-child(8) .fill p,
-.skills .fill .cards .card.active:nth-child(9) .fill p {
+.skills .fill .cards .card.active:nth-child(9) .fill p,
+.skills .fill .cards .card.active:nth-child(10) .fill p {
   animation: riseFontGreen .5s .4s forwards;
 }
 
