@@ -475,10 +475,12 @@ span {
   letter-spacing: .05em;
   display: block;
   width: 100%;
-  padding: .3em;
+  padding: .5rem;
   text-align: center;
   text-decoration: none;
   font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: .9em;
 }
 
 .achievements {
