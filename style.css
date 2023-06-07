@@ -58,6 +58,9 @@ span {
   background-size: cover;
   background-attachment: fixed;
   background-image: url("img/jumbotron.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .jumbotron .scroll {
@@ -367,7 +370,7 @@ span {
 }
 
 .display .more .fill img {
-  width: 70%;
+  width: 60%;
   z-index: 11;
   animation: 0.6s rise ease-in-out;
   border-radius: 10px;
@@ -498,7 +501,7 @@ span {
 .achievements .scroll {
   position: absolute;
   transform: rotate(90deg);
-  bottom: 5em;
+  bottom: 15em;
   display: flex;
   align-items: center;
 }
@@ -527,6 +530,9 @@ span {
 .achievements .fill {
   margin: auto;
   width: 85%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .achievements h4 {
@@ -619,6 +625,8 @@ span {
 }
 
 .walkingText {
+  background-color: white;
+  margin-top: 1rem;
   display: flex;
   justify-content: start;
   overflow: hidden;
@@ -648,6 +656,7 @@ span {
   height: fit-content;
   overflow-x: hidden;
   padding-top: 3em;
+  margin-top: 1rem;
 }
 
 .skills .fill {
