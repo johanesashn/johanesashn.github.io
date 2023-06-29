@@ -3,6 +3,15 @@
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #3f3f3f;
+  background-size: cover;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -377,7 +386,7 @@ span {
 }
 
 .display .big-image {
-  box-shadow: rgba(243, 42, 42, 0.888) 0px 8px 24px;
+  box-shadow: rgba(243, 42, 42, 0.888) 0px 0px 24px;
 }
 
 .projects .upper {
