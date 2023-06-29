@@ -376,6 +376,10 @@ span {
   border-radius: 10px;
 }
 
+.display .big-image {
+  box-shadow: rgba(243, 42, 42, 0.888) 0px 8px 24px;
+}
+
 .projects .upper {
   padding-left: 1em;
 }
