@@ -60,9 +60,9 @@ span {
 /* jumbotron */
 .jumbotron {
   padding: 0 calc(3vmin + 4em);
-  padding-top: 15vmin;
+  padding-top: 10vmin;
   position: relative;
-  height: calc(100vh - 15vmin);
+  height: calc(100vh - 10vmin);
   overflow-x: hidden;
   background-size: cover;
   background-attachment: fixed;
